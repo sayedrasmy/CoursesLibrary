@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        pwsh 'dotnet build'
+        powershell 'dotnet build'
       }
     }
 
