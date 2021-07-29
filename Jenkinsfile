@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        powershell 'dotnet build'
+        bat 'dotnet build'
       }
     }
 
