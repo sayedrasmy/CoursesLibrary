@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Unit test') {
+      steps {
+        dotnetTest()
+      }
+    }
+
   }
 }
