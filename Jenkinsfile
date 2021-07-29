@@ -13,11 +13,5 @@ pipeline {
       }
     }
 
-    stage('Code coverage') {
-      steps {
-        bat 'dotnet add package Microsoft.CodeCoverage --version 16.10.0'
-      }
-    }
-
   }
 }
