@@ -15,7 +15,7 @@ pipeline {
 
     stage('Coverage ') {
       steps {
-        bat 'CodeCoverage.exe analyze output:${WORKSPACE}\\\\TestResults\\\\xmlresults.coveragexml  ${WORKSPACE}\\\\TestResults\\\\testcoverage.coverage'
+        powershell 'CodeCoverage.exe analyze output:${WORKSPACE}\\\\TestResults\\\\xmlresults.coveragexml  ${WORKSPACE}\\\\TestResults\\\\testcoverage.coverage'
       }
     }
 
